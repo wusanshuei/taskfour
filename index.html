@@ -3,111 +3,46 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>登录页面</title>
-<style type="text/css">
-*{margin:0; padding:0;}
-body{background-color:#eff0f4;font-family:sans-serif;}
-.harder{background-color:#5fc0cd;
-	width:100%;height:50px;
-	overflow: hidden;/*超出隐藏*/
-	margin:0 auto;
-	color:#FFF;
-	}
-	.left{float:left;
-	text-align:left;
-	width:20%;
-	height:100%;
-	padding-left:3%;
-	line-height:50px;
-	}	
-	.right{float:right;
-	text-align:right;
-	width:20%;
-	height:100%;
-	padding-right:3%;
-	line-height:50px;
-	}		
-	.center{text-align: center;
-	height:100%;
-	line-height:45px;
-	}
-	
-.phone{background-color:#FFF;/*电话*/
-	width:100%;height:50px;
-	margin-top:10px;
-	overflow: hidden;/*超出隐藏*/
-	}	
-	.phonelogo{padding-left:25px;/*电话图标*/
-	padding-top:12px;
-	padding-bottom:12px;
-	width:40px;height:24px;
-	text-align:left;
-	float:left;
-	}
-.password{background-color:#FFF;/*密码*/
-	width:100%;height:50px;
-	margin-top:10px;
-	overflow: hidden;/*超出隐藏*/}
-	.passwordlogo{padding-left:25px;/*密码图标*/
-	padding-top:12px;
-	padding-bottom:12px;
-	width:40px;height:24px;
-	text-align:left;
-	float:left;
-	}
-.septum{padding-left:5px;/*分隔图标*/
-	padding-top:12px;
-	padding-bottom:12px;
-	width:20px;
-	text-align:left;
-	float:left;}
-.form{padding-left:5px;/* 表单*/
-	padding-top:12px;
-	padding-bottom:12px;
-	width:500px;height:24px;
-	text-align:left;
-	float:left;}
-	
-.sign{background-color:#5fc0cd;
-	width:100%;height:50px;
-	margin-top:10px;
-	color:#FFF;
-	}
-.color{color:#e1e5e7;
-width:200px;
-height:24px;}
-.forget{text-align:right;
-color:#5fc0cd;
-margin-top:10px;
-text-decoration:underline ;}
-.clear{  
-  clear: bottom ;  
-}  
-</style>
+<link href="all.css"rel="stylesheet"type="text/css"/>
 </head>
 
 <body>
 <div class="harder">
-<div class="left">注册</div>
-<div class="right">关闭</div>
-<div class="center">登录</div>
+<div class="left"><input type="image"name="denglu"src="images/register.png"width=""height="50px"border="0"></div>
+<div class="right"><input type="image"name="denglu"src="images/close.png"width=""height="50px"border="0"></div>
+<div class="center"><input type="image"name="denglu"src="images/sign.png"width=""height="50px"border="0"></div>
 </div>
 
 <div class="phone">
-<div class="phonelogo"><img src="images/phone.png" style="max-width:15px;"></div>
-<div class="septum"><img src="images/septum.png" width="2" height="24";></div>
-<div class="form">
-<input type="text" class="color" placeholder="请输入手机号"pattern="\d{11}"></div>
+<div class="phonelogo">
+<img src="images/phone.png" style="max-width:15px;">
 </div>
+<div class="septum">
+<img src="images/septum.png" width="2" height="24";>
+</div>
+<div class="form">
+<input type="number" class="color" placeholder="请输入手机号" >
+</div>
+</div>
+
 <div class="password">
-<div class="passwordlogo"><img src="images/password.png" style="max-width:15px;"></div>
-<div class="septum"><img src="images/septum.png" width="2" height="24";></div>
-<div class="form"><input type="text" class="color" placeholder="请输入密码"pattern="\d{11}"></div>
-<p class="clear"></p> 
+<div class="passwordlogo">
+<img src="images/password.png" style="max-width:15px;">
+</div>
+<div class="septum">
+<img src="images/septum.png" width="2" height="24";>
+</div>
+<div class="form">
+<input type="password" class="color" placeholder="请输入密码">
+</div>
 </div>
 
 <div class="sign">
-<div class="center">登录</div>
+<div class="center">
+<input type="image"name="denglu"src="images/sign.png"width=""height="50px"border="0">
 </div>
-<div class="forget">忘记密码？</div>
+</div>
+
+<div class="forget"><a class="forget" href="">忘记密码?</a></div>
 </body>
 </html>
